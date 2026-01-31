@@ -9,12 +9,12 @@
     header {background:#ff66a3; color:#fff; padding:30px 20px; text-align:center;}
     header h1 {margin:0; font-size:2.5em;}
     header p {margin-top:10px; font-size:1.1em;}
+    .button {display:inline-block; padding:10px 20px; margin-top:10px; background:#ff3399; color:#fff; text-decoration:none; border-radius:12px;}
     section {padding:40px 20px; max-width:1200px; margin:auto;}
-    h2 {color:#ff3399; margin-bottom:20px;}
+    h2 {color:#ff3399; margin-bottom:20px; text-align:center;}
     .products {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;}
     .product-card {background:#fff; border-radius:12px; padding:15px; box-shadow:0 4px 8px rgba(0,0,0,0.1); text-align:center;}
-    .product-card img {height:150px; width:auto; margin-bottom:10px;}
-    .button {display:inline-block; padding:10px 20px; margin-top:10px; background:#ff3399; color:#fff; text-decoration:none; border-radius:12px;}
+    .product-card div {height:150px; background:#ffe6f0; display:flex; align-items:center; justify-content:center; margin-bottom:10px;}
     .contact, .about, .benefits {text-align:center;}
     footer {background:#ff66a3; color:#fff; text-align:center; padding:20px 10px; margin-top:40px;}
     .button:hover {background:#e60073;}
@@ -30,8 +30,9 @@
 
 <section class="about">
   <h2>About Us</h2>
-  <p>Krupa Style Hub is a wholesale-focused brand supplying ladies handbags, purses, clutches, and traditional door hangings (Toran) to retailers, resellers, and boutiques.</p>
-  <p>We specialize in bulk orders with a minimum quantity of 50–100 pieces per design. Our collections are curated to help retailers offer stylish, quality products to their customers with confidence.</p>
+  <p><strong>Krupa Style Hub</strong> is a wholesale-focused brand supplying ladies handbags, purses, clutches, and traditional door hangings (Toran) to retailers, resellers, and boutiques.</p>
+  <p>We specialize in bulk orders with a minimum quantity of 50–100 pieces per design. Our collections are curated to help retailers offer stylish, quality products with confidence.</p>
+  <p>Decorate your entrance with our beautiful traditional door hangings (Toran) that bring positivity, warmth, and festive charm.</p>
 </section>
 
 <section class="benefits">
@@ -48,16 +49,25 @@
   <h2>Design Samples (Wholesale)</h2>
   <p style="text-align:center;">Minimum Order Quantity: 50–100 pieces per design. Prices shared on WhatsApp only.</p>
 
-  <!-- 50 Product Placeholders -->
   <div class="products">
-    <!-- Example card, duplicate for more -->
+    <!-- 50 Product placeholders -->
+    <!-- You can replace "Product Image" divs with real images later -->
+    <!-- Each card -->
+    <!-- Use loop to copy 50 times -->
+    <!-- Example -->
     <div class="product-card">
-      <div style="height:150px; background:#ffe6f0; display:flex; align-items:center; justify-content:center;">Product Image 1</div>
-      <h3>Design Sample</h3>
+      <div>Product Image 1</div>
+      <h4>Design Sample</h4>
       <p>Wholesale | MOQ 50–100 pcs</p>
       <a class="button" href="https://wa.me/919714154690?text=Hello%20Krupa%20Style%20Hub,%20I%20am%20interested%20in%20wholesale%20order%20(MOQ%2050–100).%20Please%20share%20catalog%20and%20prices." target="_blank">WhatsApp for Price</a>
     </div>
-    <!-- Duplicate 49 more placeholders -->
+    <div class="product-card">
+      <div>Product Image 2</div>
+      <h4>Design Sample</h4>
+      <p>Wholesale | MOQ 50–100 pcs</p>
+      <a class="button" href="https://wa.me/919714154690?text=Hello%20Krupa%20Style%20Hub,%20I%20am%20interested%20in%20wholesale%20order%20(MOQ%2050–100).%20Please%20share%20catalog%20and%20prices." target="_blank">WhatsApp for Price</a>
+    </div>
+    <!-- Repeat similar divs until Product Image 50 -->
   </div>
 </section>
 
